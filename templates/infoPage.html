@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Information</title>
+	<style>
+        body{
+            background-image: url("{{url_for('static',filename='pinkpage.png')}}");
+            background-size: cover;
+        }
+        .infotitle{            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(38, 36, 36);
+            margin-bottom: 20px;
+        }
+        .rectangle1{
+            height: 100px;
+            width: 200px;
+            background-color: ivory;
+            position: absolute;
+            left: 44%; /* Mkake positioning absolite use left/right pos feature*/
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="infotitle">
+       Informational Page
+    </h1>
+    <div class="rectangle1">
+        This will hold fact 1
+    </div>
+</body>
+</html>
