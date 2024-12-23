@@ -16,4 +16,9 @@ def homePage():
 def infoPage():
     return render_template("infoPage.html")
 
+#page to view projects
+@app.route('/projects')
+def projects():
+    return render_template("projects.html")
+
 #to run flask app python -m flask run 
