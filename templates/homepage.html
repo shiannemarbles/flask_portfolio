@@ -5,8 +5,11 @@
     <title>Home</title>
     <style>
         body{
-            background-color:darkgrey;
-        
+            background-image: url("{{url_for('static',filename='homeback.png')}}");
+            background-attachment: fixed; /* This fixes the image to the screen */
+            background-size: cover; /* Optional: Ensures the image covers the entire screen */
+            background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+            background-position: center; /* Optional: Centers the image */
         }
         .main{
             text-align: center;
