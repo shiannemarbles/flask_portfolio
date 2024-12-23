@@ -4,10 +4,29 @@
 <title>Projects</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
+    body{
+        background-image: url("{{url_for('static',filename='proj.png')}}");
+    }
     .welcome{
         font-size: x-large;
         position: absolute;
-        left:45%;
+        left:42%;
+    }
+    .rectangle1{
+            height: 300px;
+            width: 800px;
+            background-color:rgb(132, 129, 129);
+            position: absolute;
+            left: 30%; /* Make positioning absolite use left/right pos feature*/
+            border-radius: 20px;
+            font-size: large;
+    }
+    .back{
+        background-color: light grey;
+        border-radius: 15%;
+        position:absolute;
+        bottom:95%;
+        font-size:large;
     }
     
 </style>
@@ -15,7 +34,13 @@
 
 </script>
 <body>
-    <h1 class="welcome"> Weclome to the Projects Page </h1>
-
-
+    <h1 class="welcome"> Welcome to the Projects Page </h1>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="rectangle1">
+        <h3>Network Simulation</h3>
+        <p> A simulation that mimics network communication between and gateway node and sensors.</p>
+    </div>
+    <div>
+        <button class="back" onclick="window.location.href='/information'">←Back</button>
+    </div>
 </body>
